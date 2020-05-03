@@ -3,16 +3,8 @@ package be.intecbrussel.the_notebook.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import be.intecbrussel.the_notebook.entities.animal_entities.Animal;
-import be.intecbrussel.the_notebook.entities.animal_entities.AnimalHeightComparator;
-import be.intecbrussel.the_notebook.entities.animal_entities.AnimalNameComparator;
-import be.intecbrussel.the_notebook.entities.animal_entities.Carnivore;
-import be.intecbrussel.the_notebook.entities.animal_entities.Herbivore;
-import be.intecbrussel.the_notebook.entities.animal_entities.Omnivore;
-import be.intecbrussel.the_notebook.entities.plant_entities.Plant;
-import be.intecbrussel.the_notebook.entities.plant_entities.PlantHeightComparator;
-import be.intecbrussel.the_notebook.entities.plant_entities.PlantNameComparator;
+import be.intecbrussel.the_notebook.entities.animal_entities.*;
+import be.intecbrussel.the_notebook.entities.plant_entities.*;
 
 public class ForestNotebook {
 

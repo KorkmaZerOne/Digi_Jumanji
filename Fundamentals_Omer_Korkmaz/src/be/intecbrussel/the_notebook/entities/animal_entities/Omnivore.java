@@ -3,7 +3,6 @@ package be.intecbrussel.the_notebook.entities.animal_entities;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 import be.intecbrussel.the_notebook.entities.plant_entities.Plant;
 
 public class Omnivore extends Animal{
@@ -22,7 +21,6 @@ public class Omnivore extends Animal{
 	}
 	
 	public void addPlantToDiet( Plant plant) {
-		// Aynı bitkiden var mı
 		Set<Plant> existsPlantDiets = plantDiet.stream().filter(item -> item.getName().equals(plant.getName()))
 				.collect(Collectors.toSet());
 		

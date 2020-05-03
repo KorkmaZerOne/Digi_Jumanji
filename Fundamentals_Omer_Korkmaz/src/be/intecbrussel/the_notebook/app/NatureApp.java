@@ -1,10 +1,5 @@
 package be.intecbrussel.the_notebook.app;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import be.intecbrussel.the_notebook.entities.animal_entities.*;
 import be.intecbrussel.the_notebook.entities.plant_entities.*;
 import be.intecbrussel.the_notebook.service.ForestNotebook;
@@ -13,9 +8,10 @@ public class NatureApp {
 
 	public static void main(String[] args) {
 		
-		/*If there were an animal-type enum, such as smel and leaf type, 
-		 * instead of the individual subclasses of the Animal class, 
-		 * we could filter the animal species with less processing and more easily.
+		/*Ik kies ArrayList.
+		 * want als reiziger voegen we één voor één toe aan de lijst terwijl we door het bos lopen.
+		 * In ons geval is er, eenmaal geregistreerd, geen manipulatie van de gegevens.
+		 * Als ik in bulk moest uploaden en groot moest doen, zou ik voor LinkedList kiezen
 		 */
 				
 		ForestNotebook DigiJumanji_01 = new ForestNotebook();
@@ -51,7 +47,7 @@ public class NatureApp {
 		herbivore1.addPlantToDiet(bush2);
 		herbivore2.addPlantToDiet(flower4);
 		herbivore3.addPlantToDiet(weed2);
-		
+	
 		omnivore1.addPlantToDiet(bush1);
 		omnivore2.addPlantToDiet(bush2);
 		omnivore2.addPlantToDiet(bush2);//controlemechanisme werkt
@@ -90,6 +86,7 @@ public class NatureApp {
 		//Dieren en planten printen
 		DigiJumanji_01.printNotebook();
 		
+		
 		//Print de lijsten van carnivores, omnivores en herbivores afzonderlijk af.		
 		System.out.println("\n" + "----Carnivores----" + "\n");
 		DigiJumanji_01.getCarnivores().forEach(System.out :: println);
@@ -113,6 +110,7 @@ public class NatureApp {
 		
 		System.out.println("\n" + "----Planten gesorteerd op hoogte----" + "\n");
 		DigiJumanji_01.sortPlantsByHeight();
+		
 		
 		//Druk het aantal dieren en planten af
 		System.out.println("\n" + "----Animals Aantal----");

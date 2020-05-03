@@ -1,10 +1,8 @@
 package be.intecbrussel.the_notebook.entities.animal_entities;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 import be.intecbrussel.the_notebook.entities.plant_entities.Plant;
 
 public class Herbivore extends Animal{
